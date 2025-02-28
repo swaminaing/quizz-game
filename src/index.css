@@ -9,3 +9,57 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+body{
+  height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main{
+  width: 700px;
+  height: auto;
+  background-color: #ccc;
+  border-radius: 5px;
+
+  padding: 30px;
+}
+
+main .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .container .answers-heading{
+  width: 50%;
+
+  display: grid;
+  place-items: center;
+}
+
+main .container .answers-wrapper{
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .container .answers-wrapper button{
+  width: 90%;
+  background-color: cadetblue;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+
+  margin: 10px 0;
+  padding: 10px;
+}
+
+main .container .answers-wrapper button:hover{
+  background-color: rgb(118, 206, 209);
+}
